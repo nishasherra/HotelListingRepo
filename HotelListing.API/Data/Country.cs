@@ -9,4 +9,4 @@
 
         public virtual IList<Hotel> Hotels { get; set; } 
     }
-}
+} 
