@@ -3,6 +3,7 @@ using AutoMapper;
 using HotelListing.API.Data;
 using HotelListing.API.Models.Country;
 using HotelListing.API.Models.Hotel;
+using HotelListing.API.Models.Users;
 using System.Security.Cryptography.X509Certificates;
 
 namespace HotelListing.API.Configurations
@@ -19,6 +20,8 @@ namespace HotelListing.API.Configurations
 
             CreateMap<Hotel, HotelDTO>().ReverseMap();
             CreateMap<Hotel, CreateHotelDTO>().ReverseMap();
+
+            CreateMap<ApiUserDTO, ApiUser>().ReverseMap();
         }
     }
 }
